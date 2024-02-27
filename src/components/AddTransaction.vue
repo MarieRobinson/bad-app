@@ -18,7 +18,7 @@
 import { ref } from 'vue';
 import {useToast} from 'vue-toastification';
 
-
+// learning note - wraping a function in ref() will make it reactive
 const text = ref('');
 const amount = ref('');
 
