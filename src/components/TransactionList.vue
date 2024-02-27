@@ -10,7 +10,7 @@
 <script setup>
 import { defineProps } from 'vue';
 
-const emit = defineEmits(['transaction-deleted']);
+const emit = defineEmits(['transactionDeleted']);
 
 const props = defineProps({
   transactions: {
@@ -20,6 +20,6 @@ const props = defineProps({
 });
 
 const deleteTransaction = (id) => {
-  emit('transaction-deleted', id);
+  emit('transactionDeleted', id);
 }
 </script> 
