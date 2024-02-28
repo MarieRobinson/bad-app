@@ -35,7 +35,7 @@ const onSubmit = () => {
     text: text.value,
     amount: parseFloat(amount.value)
   }
-  git setup
+  
   if (isNaN(amount.value)) {
     toast.error('Amount must be a number!');
     return
