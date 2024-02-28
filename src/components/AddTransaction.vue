@@ -29,11 +29,16 @@ const toast = useToast();
 const onSubmit = () => {
   if (!text.value || !amount.value) {
     toast.error('Both fields are required!');
+    return
   }
-
   const transactionData = {
     text: text.value,
     amount: parseFloat(amount.value)
+  }
+  git setup
+  if (isNaN(amount.value)) {
+    toast.error('Amount must be a number!');
+    return
   }
 
   emit('transactionSubmitted', transactionData);
